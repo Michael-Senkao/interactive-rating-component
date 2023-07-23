@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="root">
+      <!-- Rating state start -->
+      <div class="card first-card">
+        <div class="rating-state">
+          <div class="icon-star round">
+            <img src="./images/icon-star.svg" alt="" />
+          </div>
+
+          <p class="font-size-700">How did we do?</p>
+          <p class="light">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+
+          <div class="ratings">
+            <div class="round">
+              <p class="rating hover light">1</p>
+            </div>
+            <div class="round">
+              <p class="rating hover light">2</p>
+            </div>
+            <div class="round">
+              <p class="rating hover light">3</p>
+            </div>
+            <div class="round">
+              <p class="rating hover light">4</p>
+            </div>
+            <div class="round">
+              <p class="rating max-rating hover light">5</p>
+            </div>
+          </div>
+          <button class="submit hover">Submit</button>
+        </div>
+      </div>
+
+      <div class="card second-card">
+        <div class="thank-you-state">
+          <div class="illustration-thank-you">
+            <img src="./images/illustration-thank-you.svg" alt="" />
+          </div>
+          <p class="selection">
+            You selected <span id="actual-rating"></span> out of 5
+          </p>
+          <p class="font-size-700">Thank you!</p>
+          <p class="light">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+
+      <div class="attribution">
+        <p>
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.frontendmentor.io/profile/Michael-Senkao"
+            >Michael Senkao</a
+          >.
+        </p>
+      </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
