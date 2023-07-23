@@ -11,6 +11,7 @@ body {
   color: hsl(0, 0%, 100%);
   font-family: "Overpass", sans-serif;
 }
+
 .font-size-700 {
   font-weight: 700;
   font-size: 1.25rem;
@@ -20,6 +21,7 @@ body {
   opacity: 0.6;
   font-size: 12px;
 }
+
 .root {
   background-color: hsl(216, 12%, 8%);
   height: 100vh;
@@ -31,7 +33,7 @@ body {
 
 .card {
   background-color: hsl(214, 21%, 13%);
-  width: 300px;
+  max-width: 300px;
   border-radius: 15px;
 }
 
@@ -40,9 +42,12 @@ body {
   flex-direction: column;
 }
 
+/* Rating State */
+
 .rating-state {
   margin: 20px;
 }
+
 .rating-state > * {
   margin-bottom: 15px;
 }
@@ -56,6 +61,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .round > * {
   background-color: hsl(215, 23%, 25%);
   height: 30px;
@@ -70,8 +76,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.hover:hover,
-.hover:active {
+.hover:hover {
   cursor: pointer;
 }
 
@@ -105,6 +110,12 @@ body {
   color: hsl(25, 97%, 53%);
 }
 
+/*Thank You State*/
+
+.second-card {
+  display: none;
+}
+
 .thank-you-state {
   justify-content: center;
   align-items: center;
@@ -131,10 +142,7 @@ body {
   opacity: 0.7;
 }
 
-.second-card {
-  display: none;
-}
-
+/* Attribution*/
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -148,4 +156,10 @@ body {
 }
 .attribution a {
   color: hsl(80, 90%, 48%);
+}
+
+@media (max-width: 375px) {
+  .attribution * {
+    font-size: 0.75rem;
+  }
 }
