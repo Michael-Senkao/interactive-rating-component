@@ -80,7 +80,12 @@ body {
   cursor: pointer;
 }
 
-.rating:hover,
+.rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  opacity: 1;
+  font-weight: bold;
+}
+
 .rating-active {
   background-color: hsl(216, 12%, 54%);
   opacity: 1;
